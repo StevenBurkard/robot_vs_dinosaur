@@ -4,12 +4,13 @@ from weapon import Weapon
 from battlefield import Battlefield      
 
 
-weapon = Weapon("Plasma Pistol", 25)
-dinosaur = Dinosaur("Spinosaurus", 100, 20)
-robot = Robot("Droid", 100, weapon)
+weapon = Weapon("Ion Blaster", 20)
+dinosaur = Dinosaur("Spinosaurus", 100, 25)
+#From the movie: I, Robot 
+robot = Robot("Sonny", 100, weapon)
 robot.equip_weapon(weapon)
 
-battlefield = Battlefield("The Crucible", robot, dinosaur)
+battlefield = Battlefield("Apex Colosseum", robot, dinosaur)
 
 battlefield.battle_scene()
 
